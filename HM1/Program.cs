@@ -1,5 +1,4 @@
-﻿
-Console.Write("Введите количество строк, которые хотите ввести: ");
+﻿Console.Write("Введите количество строк, которые хотите ввести: ");
 int n = Convert.ToInt32(Console.ReadLine()); // Считываем строку, переводим в число.
 string[] strs = new string[n]; //Объявляем массив строк длиной n (которую ввёл пользователь)
 int k = 0;
@@ -10,7 +9,7 @@ for (int i = 0; i < n; i++)
     strs[i] = Console.ReadLine(); //Заполняем его
 }
 Console.WriteLine("Искомые элементы массива :");
-for (int i = 0; i < n;)
+for (int i = 0; i < n;)//Проверка количества элементов в массиве удовлетворяющив условию задачи 
 {
     if (strs[i].Length > 3){
         i++;
@@ -19,8 +18,8 @@ for (int i = 0; i < n;)
         i++;
     }
 }
-string[] result = new string[k];
-for (int i = 0; i < n;)
+string[] result = new string[k];//Объявляем массив строк длиной k
+for (int i = 0; i < n;)//перенос элементов  удовлетворяющих условию задачи в новый массив 
 {
 if (strs[i].Length > 3){
         i++;
@@ -32,6 +31,6 @@ if (strs[i].Length > 3){
 }
 for (int i = 0; i < k;i++)
 {
-    Console.Write(result[i]+ " ");
+    Console.Write(result[i]+ " ");// Вывод решения
 }
 Console.ReadLine();
