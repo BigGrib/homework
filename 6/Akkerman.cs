@@ -1,4 +1,4 @@
-﻿static int A(int n, int m)
+﻿static int A(int M, int N)
 {
   if (n == 0)
     return m + 1;
@@ -8,8 +8,11 @@
     else
       return A(n - 1, A(n, m - 1));
 }
-Console.Write("M = ");
+
+Console.WriteLine("Введите первое число");
+Console.Write("число M = ");
 int M = int.Parse(Console.ReadLine());
-Console.Write("N = ");
+Console.WriteLine("Введите первое число");
+Console.Write("число N = ");
 int N = int.Parse(Console.ReadLine());
-Console.WriteLine($"F(Akkerman), F = {A(M, N)}");
+Console.WriteLine($"F({M},{N}), F = {A(M, N)}");
