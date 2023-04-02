@@ -46,12 +46,14 @@ for (int i = 0; i < k;i++)
 }
 
 
+
+
+int k = 0;
+int j = 0;
 Console.Write("Введите количество строк, которые хотите ввести: ");
 string w = Console.ReadLine()?? ""; // Считываем строку, переводим в число.
 int n = Ex(w);
 string[] arr = new string[n]; //Объявляем массив строк длиной n (которую ввёл пользователь)
-int k = 0;
-int j = 0;
 for (int i = 0; i < n; i++)
 {
     Console.Write("Введите строку №{0}:\r\n    ", i + 1);
