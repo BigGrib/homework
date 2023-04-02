@@ -1,4 +1,17 @@
-﻿static int Num(string[] arr, int n, int k){
+﻿static int Ex(string w){
+    int t;
+    bool f = int.TryParse(w, out t);
+    if (f){
+    return t;
+    }
+    else {
+        Console.WriteLine("Введено неправильное число");
+        return 0;
+    }
+}
+
+
+static int Num(string[] arr, int n, int k){
     for (int i = 0; i < n;)
 {
     if (arr[i].Length > 3){
@@ -34,14 +47,15 @@ for (int i = 0; i < k;i++)
 
 
 Console.Write("Введите количество строк, которые хотите ввести: ");
-int n = Convert.ToInt32(Console.ReadLine()); // Считываем строку, переводим в число.
+string w = Console.ReadLine()?? ""; // Считываем строку, переводим в число.
+int n = Ex(w);
 string[] arr = new string[n]; //Объявляем массив строк длиной n (которую ввёл пользователь)
 int k = 0;
 int j = 0;
 for (int i = 0; i < n; i++)
 {
     Console.Write("Введите строку №{0}:\r\n    ", i + 1);
-    arr[i] = Console.ReadLine(); //Заполняем его
+    arr[i] = Console.ReadLine()?? ""; //Заполняем его
 }
 k = Num(arr,n,k);
 string[] result = new string[k];//Объявляем массив строк длиной k
