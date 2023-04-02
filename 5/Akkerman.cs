@@ -12,5 +12,4 @@ Console.Write("M = ");
 int M = int.Parse(Console.ReadLine());
 Console.Write("N = ");
 int N = int.Parse(Console.ReadLine());
-int result = A(M,N);
-Console.WriteLine(result);
+Console.WriteLine($"F(Akkerman), F = {A(M, N)}");
