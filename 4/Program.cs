@@ -12,6 +12,8 @@
             int M = int.Parse(Console.ReadLine());
             Console.Write("N = ");
             int N = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Result, S = {SumNumbers(M, N)}");
+            for (int i = 1;i<N;i++){
+            Console.WriteLine($"Result, S = {SumNumbers(M, i)}");
+            }
             Console.ReadLine();
         
