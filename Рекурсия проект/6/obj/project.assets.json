@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programmer\\5\\5.csproj",
+      "projectUniqueName": "D:\\programmer\\Рекурсия проект\\6\\5.csproj",
       "projectName": "5",
-      "projectPath": "D:\\programmer\\5\\5.csproj",
+      "projectPath": "D:\\programmer\\Рекурсия проект\\6\\5.csproj",
       "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-      "outputPath": "D:\\programmer\\5\\obj\\",
+      "outputPath": "D:\\programmer\\Рекурсия проект\\6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config"
