@@ -1,4 +1,4 @@
-﻿static int A(int M, int N)
+﻿static int A(int m, int n)
 {
   if (n == 0)
     return m + 1;
